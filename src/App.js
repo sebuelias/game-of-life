@@ -42,7 +42,7 @@ function App() {
   });
   const [running, setRuning] = useState(false);
   // !USe this from user input
-  const [randomisingFactor, setRandomisingFactor] = useState(0.8);
+  // const [randomisingFactor, setRandomisingFactor] = useState(0.8);
   const runningRef = useRef(running);
   runningRef.current = running;
 
@@ -130,7 +130,7 @@ function App() {
       </button>
       <button
         onClick={() => {
-          setGrid(generateRandomGrid(randomisingFactor));
+          setGrid(generateRandomGrid(/* randomisingFactor */0.7));
         }}
       >
         Random
